@@ -6,19 +6,19 @@ Input files for Expert mode
 ===========================
 
 In this section, detailed input files (\*.def) are explained. Input
-files are categorized by the following six parts. The files that are
+files are categorized into the following six parts. The files that are
 listed in parentheses correspond to the file made by vmcdry.out.
 
 (1) List:
 
     No keyword (namelist.def): This file is a list of input file names
-    with keywords. Each keywords is fixed, but file names are free to
+    with keywords. Each keyword is fixed, but file names are free to
     be determined.
 
 (2) Basic parameters:
       
     **ModPara** (modpara.def): Set the parameters for basic parameters
-    such as site number, electron number, Lanczos step *etc*.  
+    such as site number, electron number, Lanczos step, *etc*.  
     **LocSpin (locspn.def)**: Set the location of local spin.
 
 (3) Hamiltonian:
@@ -43,7 +43,7 @@ listed in parentheses correspond to the file made by vmcdry.out.
     site :math:`i` as
     :math:`n_{i \sigma}=c_{i\sigma}^{\dagger}c_{i\sigma}` and the total
     charge density operator at site :math:`i` as
-    :math:`n_i=n_{i\uparrow}+n_{i\downarrow}`. Each parameters are
+    :math:`n_i=n_{i\uparrow}+n_{i\downarrow}`. Each parameter are
     specified by the following files, respectively;
 
     **Trans (trans.def)**: :math:`t_{ij\sigma_1\sigma_2}` in
@@ -69,7 +69,7 @@ listed in parentheses correspond to the file made by vmcdry.out.
 (4) Variational parameters to be optimized:
       
     The variational parameters to be optimized are specified by using
-    this categorized files. In mVMC, the variational wave function is
+    these categorized files. In mVMC, the variational wave function is
     given as
 
     .. math::
@@ -438,7 +438,7 @@ Keywords and parameters
 
    **Type :** int-type (Positive integer, default value: 8)
 
-   **Description :** The mesh number for the Gauss-legendre quadrature
+   **Description :** The mesh number for the Gauss-Legendre quadrature
    about :math:`\beta` integration (:math:`S_y` rotation) for the spin
    quantum-number projection in actual numerical calculation.
 
